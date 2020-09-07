@@ -1,0 +1,11 @@
+<h1>Countries</h1>
+
+<ul *ngIf="country">
+  <a *ngFor="let countries of country" [routerLink]="['/states', countries.iso2]">
+    <li>
+      <p class="name">{{ countries.name }}</p>
+      <p class="capital">{{ countries.capital }}</p>
+    </li>
+  </a>
+
+</ul>

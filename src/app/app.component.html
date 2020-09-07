@@ -1,0 +1,16 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">CoolApp</a>
+    <nav>
+      <ul>
+        <li><a href="#" routerLink="/" routerLinkActive="home" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a href="#" routerLink="/list" routerLinkActive="list" [routerLinkActiveOptions]="{exact: true}">Breweries</a></li>
+        <li><a href="#" routerLink="/countries" routerLinkActive="countries" [routerLinkActiveOptions]="{exact: true}">Countries</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
